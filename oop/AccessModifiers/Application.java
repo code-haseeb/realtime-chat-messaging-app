@@ -2,7 +2,7 @@ package AccessModifiers;
 
 class AccessModifier {
     public String publicField = "This is a public field";
-    private String privateField = "This is a public field";
+    String privateField = "This is a public field";
     protected String protectedField = "This is a public field";
     String defaultField = "This is a public field";
 
@@ -10,7 +10,7 @@ class AccessModifier {
         System.out.println("This is a public ");
     }
 
-    private void privateMethod() {
+    void privateMethod() {
         System.out.println("This is a public method");
     }
 
@@ -31,6 +31,7 @@ public class Application {
         System.out.println(accessModifierExample.publicField);
         accessModifierExample.publicMethod();
         // Accessing private vairables and methods would cause an Error
+        // so change them to default 
         System.out.println("Accessing private Members");
         System.out.println(accessModifierExample.privateField);
         accessModifierExample.privateMethod();
